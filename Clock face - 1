@@ -1,0 +1,23 @@
+QUES: 
+H hours, M minutes and S seconds are passed since the midnight (0 ≤ H < 12, 0 ≤ M < 60, 0 ≤ S < 60). 
+Determine the angle (in degrees) of the hour hand on the clock face right now.
+
+HINT:
+angle covered by hour hand in 1 hour = 360/12 =30 degree
+angle covered in H hours( by hour hand) = 30 * H
+
+M minutes = M/60 hours
+angle covered in M/60 hours( by hour hand) = 30 * ( M/60 )
+
+S seconds = S/3600 hours
+angle covered in S/3600 hours( by hour hand) = 30 * (S/3600)
+
+total angle(by hour hand) =30*H + 30*(M/60) + 30*(S/3600)
+
+
+CODE:
+h=int(input())
+m=int(input())
+s=int(input())
+r=(h+(m/60)+s/3600)*30
+print(r)
