@@ -1,0 +1,16 @@
+QUES: 
+Hour hand turned by x degrees since the midnight. 
+Determine the angle by which minute hand turned since the start of the current hour. 
+Input and output in this problems are floating-point numbers. 
+
+HINT: 
+angle covered by hour hand in 1 hour = 30 degree
+angle covered(since the start of the hour) by hour hand = x % 30
+1 degree(hour hand) = 12 degree(minute hand)
+angle covered(since the start of the hour) by MINUTE hand = ( x % 30 ) * 12
+
+
+CODE:
+a=float(input())
+a=a%30
+print(a*12)
